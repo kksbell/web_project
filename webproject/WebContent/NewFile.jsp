@@ -8,5 +8,13 @@
 </head>
 <body>
 	<h2>시작파일</h2>
+	
+	<h3>선택</h3>
+	<select>
+		<option> ### 선택 ### </option>
+		<option> git </option>
+		<option> jsp </option>
+		<option> spring </option>
+	</select>
 </body>
 </html>
