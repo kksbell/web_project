@@ -1,0 +1,10 @@
+@CHARSET "UTF-8";
+
+#po_wrap{
+		 width:1000px; height:600px; border:1px solid blue;
+		 margin-right:auto; margin-left:auto; float:left;
+} 
+		 
+#po_wrap .po_content{
+		width:400px; height:400px; margin-right:auto; margin-left:auto; float:left;
+} 
