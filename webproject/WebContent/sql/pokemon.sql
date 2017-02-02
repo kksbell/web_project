@@ -1,16 +1,46 @@
+-- 혹시 있을지 모르는 테이블 제거
+drop table pokemon purge;
+drop table pmember purge;
+drop table jebo purge;
+drop table mypokemon purge;
 
+-- 테이블 만들기
+  -- 포켓몬 정보
   CREATE TABLE pokemon 
-   (	"PNO" NUMBER primary key, 
-	"PNAME" VARCHAR2(20), 
-	"PINITIAL" VARCHAR2(5), 
-	"PTYPE" VARCHAR2(20), 
-	"PTYPE2" VARCHAR2(20), 
-	"PFEATURE" VARCHAR2(100), 
-	"PFEATURE_H" VARCHAR2(100), 
-	"PPICTURE" VARCHAR2(30), 
-	"PHEIGHT" VARCHAR2(50), 
-	"PWEIGHT" VARCHAR2(50)
+   (	"PNO" NUMBER primary key, -- 포켓몬 번호(1~151) 
+	"PNAME" VARCHAR2(20) not null, unique, -- 포켓몬 이름
+	"PINITIAL" VARCHAR2(5) not null,  -- 포켓몬 첫글자(ㄱ~ㅎ)
+	"PTYPE" VARCHAR2(20) not null, -- 포켓몬 타입 (리자몽 : 불)
+	"PTYPE2" VARCHAR2(20), -- 포켓몬 타입2 (리자몽: 비행)
+	"PFEATURE" VARCHAR2(100), -- 포켓몬 특성
+	"PFEATURE_H" VARCHAR2(100), -- 포켓몬의 숨겨진 특성
+	"PPICTURE" VARCHAR2(30), -- 포켓몬 이미지 주소
+	-- http://pokedex.pokemonkorea.co.kr/templates/default/images/MonImages/middle/ 다음에 붙여쓰면됨
+	"PHEIGHT" VARCHAR2(50), -- 포켓몬 키
+	"PWEIGHT" VARCHAR2(50) -- 포켓몬 무게
    ) ;
+   
+   
+   create table pmember(
+   ID varchar2(20) primary key, -- ID
+   pwd varchar2(20) not null, -- 비밀번호
+   nickname varchar2(20) not null, -- 닉네임 (필요할지몰라서)
+   regdate date -- 가입일시 (필요할지몰라서)
+   );
+   
+   create table jebo(
+   id varchar2(20) references pmember (id), -- 아이디: member 테이블의 외래키
+   pno number references pokemon (pno), -- 포켓몬 번호 : pokemon 테이블의 외래키
+   location varchar2(500), -- 발견지역
+   tip varchar2(500), -- 공략(?)ㅋㅋ
+   wdate date -- 제보일시(필요할지몰라서)
+   );
+   
+   create table mypokemon(
+   id varchar2(20) references pmember (id), -- 아이디: member 테이블의 외래키
+   pno number references pokemon (pno), -- 포켓몬 번호 : pokemon 테이블의 외래키
+   );
+   
 
 Insert into SCOTT.pokemon (PNO,PNAME,PINITIAL,PTYPE,PTYPE2,PFEATURE,PFEATURE_H,PPICTURE,PHEIGHT,PWEIGHT) values (1,'이상해씨','ㅇ','풀','독','심록','엽록소','001_001.png','0.7m','6.9kg');
 Insert into SCOTT.pokemon (PNO,PNAME,PINITIAL,PTYPE,PTYPE2,PFEATURE,PFEATURE_H,PPICTURE,PHEIGHT,PWEIGHT) values (2,'이상해풀','ㅇ','풀','독','심록','엽록소','002_002.png','1.0m','13.0kg');
