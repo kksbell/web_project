@@ -8,7 +8,7 @@ drop table mypokemon purge;
   -- 포켓몬 정보
   CREATE TABLE pokemon 
    (	"PNO" NUMBER primary key, -- 포켓몬 번호(1~151) 
-	"PNAME" VARCHAR2(20) not null, unique, -- 포켓몬 이름
+	"PNAME" VARCHAR2(20) not null, -- 포켓몬 이름
 	"PINITIAL" VARCHAR2(5) not null,  -- 포켓몬 첫글자(ㄱ~ㅎ)
 	"PTYPE" VARCHAR2(20) not null, -- 포켓몬 타입 (리자몽 : 불)
 	"PTYPE2" VARCHAR2(20), -- 포켓몬 타입2 (리자몽: 비행)
@@ -33,7 +33,7 @@ drop table mypokemon purge;
    pno number references pokemon (pno), -- 포켓몬 번호 : pokemon 테이블의 외래키
    location varchar2(500), -- 발견지역
    tip varchar2(500), -- 공략(?)ㅋㅋ
-   ssshot varchar2(200) -- 스샷
+   ssshot varchar2(200) -- 스샷(주소, 파일업로드용)
    wdate date -- 제보일시(필요할지몰라서)
    );
    
