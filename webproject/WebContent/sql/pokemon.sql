@@ -33,7 +33,7 @@ drop table mypokemon purge;
    pno number references pokemon (pno), -- 포켓몬 번호 : pokemon 테이블의 외래키
    location varchar2(500), -- 발견지역
    tip varchar2(500), -- 공략(?)ㅋㅋ
-   ssshot varchar2(200), -- 스샷(주소, 파일업로드용)
+   sshot varchar2(200) default 'a.jpg', -- 스샷(주소, 파일업로드용)
    wdate date -- 제보일시
    );
    
