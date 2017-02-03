@@ -4,7 +4,7 @@ import java.sql.Connection;
 import java.sql.PreparedStatement;
 import java.sql.ResultSet;
 
-import com.pokemon.model.PokemonBean;
+//import com.pokemon.model.PokemonBean;
 import db.DBConnection;
 
 public class PokemonDAO {

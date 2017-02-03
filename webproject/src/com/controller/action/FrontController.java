@@ -21,7 +21,7 @@ public class FrontController extends HttpServlet {
 
 		Properties prop = new Properties();
 		FileInputStream fis = 
-			new FileInputStream("C:\\Users\\acorn\\git\\web_project\\webproject\\src\\com\\controller\\action\\mapping.properties");
+			new FileInputStream("C:\\NCS\\jsp\\GitRep\\web_project\\webproject\\src\\com\\controller\\action\\mapping.properties");
 		//프로퍼티화일로드, 자바 경로 구분은 \\ or /
 		prop.load(fis);
 		fis.close();

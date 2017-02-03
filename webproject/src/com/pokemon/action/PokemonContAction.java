@@ -14,8 +14,7 @@ public class PokemonContAction implements Action {
 	public ActionForward execute(HttpServletRequest request, HttpServletResponse response) throws Exception {
 		// TODO Auto-generated method stub
 		// 1. 번호 받기
-		int PNO= Integer.parseInt
-				(request.getParameter("PNO"));
+		int PNO= 1;// Integer.parseInt(request.getParameter("1"));// "PNO"
 		
 		// 2. 조회
 		PokemonDAO dao = new PokemonDAO();
@@ -28,7 +27,7 @@ public class PokemonContAction implements Action {
 		// 4. view page 포워딩
 		ActionForward forward = new ActionForward();
 		forward.setRedirect(false);
-		forward.setPath("./jsp/po.jsp");
+		forward.setPath("../jsp/po.jsp");
 		return forward;
 		
 	}
