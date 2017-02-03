@@ -9,7 +9,15 @@
      </div>
      
      <br><br>
-     <form name="login" id="frm">
+     <% if(session.getAttribute("id")!=null){
+    	 %>
+    	 안녕하세요, <%=session.getAttribute("nickname") %> 님!
+    	 <br/>
+    	 마이페이지<br/>
+    	 <a href="logout.do">로그아웃</a>
+    	 <%
+     }else{%>
+     <form name="login" id="frm" method="post" action="login.do">
      <div id="login" align="center">
      	<b>아이디: <input name="id" type="text" size="24"><br>
      	비밀번호 :<input name="pwd" type="password" size="23"></b><br><br>
@@ -23,6 +31,7 @@
      </div>
      <br><br>
      </form>
+     <%} %>
      <div id="name">
      <b>포켓몬 이름</b><br>
           <div >
