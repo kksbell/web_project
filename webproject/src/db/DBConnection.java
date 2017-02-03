@@ -11,7 +11,7 @@ import java.util.Properties;
 public class DBConnection { 
 	private String driver, url, user, passwd;
 	private static final String
-	  FILE="C:\\Users\\acorn\\git\\web_project\\webproject\\src\\db\\dbconnect.properties";
+	  FILE="C:\\Users\\acorn\\git\\web_project\\webproject\\src\\db\\dbconnect.properties"; 
 	public Connection con = null;
 	
 	// 생성자 
