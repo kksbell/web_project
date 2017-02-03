@@ -14,6 +14,7 @@
 
 
 <div id="all">
+<<<<<<< HEAD
  <div id="left" > 
 	<div>
        <a href="./index.jsp" onfocus="this.blur()">
@@ -63,6 +64,9 @@
 	 </div>
 	 
 </div>
+=======
+<%@ include file="./jsp/left.jsp" %>
+>>>>>>> branch 'master' of https://github.com/kksbell/web_project.git
 <div id="right">
 
     <table>
