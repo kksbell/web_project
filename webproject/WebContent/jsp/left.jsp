@@ -21,24 +21,30 @@
      <br><br>
      
      <div id="name">
-     <b>&nbsp;&nbsp;포켓몬 이름</b><br>
-     <!-- <div >
-         	<img src="./images/001.PNG" width="160" height="160" class="img1"/>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
-         	<img src="./images/002.PNG" width="160" height="160" class="img1" />&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
-         	<img src="./images/003.PNG" width="160" height="160" class="img1" />&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
-         	<img src="./images/004.PNG" width="160" height="160" class="img1" />
-     	</div><br> 
-     	<div>
-         	<img src="./images/005.PNG" width="160" height="160" class="img1" />&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
-         	<img src="./images/006.PNG" width="160" height="160" class="img1" />&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
-         	<img src="./images/007.PNG" width="160" height="160" class="img1" />&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
-         	<img src="./images/008.PNG" width="160" height="160" class="img1" />
-     	</div> -->
+     <b>포켓몬 이름</b><br>
+          <div >
+         	<img src="http://pokedex.pokemonkorea.co.kr/templates/default/images/btn_name_01.png" />
+         	<img src="http://pokedex.pokemonkorea.co.kr/templates/default/images/btn_name_02.png" />
+         	<img src="http://pokedex.pokemonkorea.co.kr/templates/default/images/btn_name_03.png" />
+         	<img src="http://pokedex.pokemonkorea.co.kr/templates/default/images/btn_name_04.png" />
+         	<img src="http://pokedex.pokemonkorea.co.kr/templates/default/images/btn_name_05.png" />
+         	<img src="http://pokedex.pokemonkorea.co.kr/templates/default/images/btn_name_06.png" />
+         	<img src="http://pokedex.pokemonkorea.co.kr/templates/default/images/btn_name_07.png" />
+     </div>
+     <div>
+         	<img src="http://pokedex.pokemonkorea.co.kr/templates/default/images/btn_name_08.png" />
+         	<img src="http://pokedex.pokemonkorea.co.kr/templates/default/images/btn_name_09.png" />
+         	<img src="http://pokedex.pokemonkorea.co.kr/templates/default/images/btn_name_10.png"  />
+         	<img src="http://pokedex.pokemonkorea.co.kr/templates/default/images/btn_name_11.png"  />
+         	<img src="http://pokedex.pokemonkorea.co.kr/templates/default/images/btn_name_12.png"  />
+         	<img src="http://pokedex.pokemonkorea.co.kr/templates/default/images/btn_name_13.png"  />
+         	<img src="http://pokedex.pokemonkorea.co.kr/templates/default/images/btn_name_14.png"  />
+     </div>
 	 </div>
 	 
 	 
 	  <div id="name">
-     <b>&nbsp;&nbsp;정렬</b><br>
+     <b>정렬</b><br>
      
 	 </div>
 	 
