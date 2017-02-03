@@ -33,13 +33,13 @@ drop table mypokemon purge;
    pno number references pokemon (pno), -- 포켓몬 번호 : pokemon 테이블의 외래키
    location varchar2(500), -- 발견지역
    tip varchar2(500), -- 공략(?)ㅋㅋ
-   ssshot varchar2(200) -- 스샷(주소, 파일업로드용)
+   ssshot varchar2(200), -- 스샷(주소, 파일업로드용)
    wdate date -- 제보일시
    );
    
    create table mypokemon(
    id varchar2(20) references pmember (id), -- 아이디: member 테이블의 외래키
-   pno number references pokemon (pno), -- 포켓몬 번호 : pokemon 테이블의 외래키
+   pno number references pokemon (pno) -- 포켓몬 번호 : pokemon 테이블의 외래키
    );
    
 
@@ -194,3 +194,6 @@ Insert into SCOTT.pokemon (PNO,PNAME,PINITIAL,PTYPE,PTYPE2,PFEATURE,PFEATURE_H,P
 Insert into SCOTT.pokemon (PNO,PNAME,PINITIAL,PTYPE,PTYPE2,PFEATURE,PFEATURE_H,PPICTURE,PHEIGHT,PWEIGHT) values (149,'망나뇽','ㅁ','드래곤 비행',null,'정신력','멀티스케일','159_149.png','2.2m','210.0kg');
 Insert into SCOTT.pokemon (PNO,PNAME,PINITIAL,PTYPE,PTYPE2,PFEATURE,PFEATURE_H,PPICTURE,PHEIGHT,PWEIGHT) values (150,'뮤츠','ㅁ','에스퍼',null,'프레셔','긴장감','160_150_01.png','2.0m','122.0kg');
 Insert into SCOTT.pokemon (PNO,PNAME,PINITIAL,PTYPE,PTYPE2,PFEATURE,PFEATURE_H,PPICTURE,PHEIGHT,PWEIGHT) values (151,'뮤','ㅁ','에스퍼',null,'싱크로',null,'163_151.png','1.5m','33.0kg');
+
+select*from pokemon;
+commit work;
