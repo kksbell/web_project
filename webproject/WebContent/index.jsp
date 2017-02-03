@@ -12,9 +12,8 @@
 </head>
 <body>
 
-
-<div id="all">
 <%@ include file="./jsp/left.jsp" %>
+
 <div id="right">
 
     <table>
