@@ -34,7 +34,7 @@ drop table mypokemon purge;
    location varchar2(500), -- 발견지역
    tip varchar2(500), -- 공략(?)ㅋㅋ
    ssshot varchar2(200) -- 스샷(주소, 파일업로드용)
-   wdate date -- 제보일시(필요할지몰라서)
+   wdate date -- 제보일시
    );
    
    create table mypokemon(
