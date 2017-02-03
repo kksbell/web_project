@@ -8,9 +8,10 @@
      </div>
      
      <br><br>
+     <form name="login">
      <div id="login" align="center">
-     	<b>아이디: <input type="text" size="24"><br>
-     	비밀번호 :<input type="password" size="23"></b><br><br>
+     	<b>아이디: <input name="id" type="text" size="24"><br>
+     	비밀번호 :<input name="pwd" type="password" size="23"></b><br><br>
 
      	<div>
          	<img src="./images/login.PNG" width="70" height="30" border="0" />
@@ -19,7 +20,7 @@
      	</div>     	
      </div>
      <br><br>
-     
+     </form>
      <div id="name">
      <b>&nbsp;&nbsp;포켓몬 이름</b><br>
      <!-- <div >
