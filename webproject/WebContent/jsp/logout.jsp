@@ -7,6 +7,9 @@
 <title>Insert title here</title>
 </head>
 <body>
-
+<% session.invalidate(); %>
+<script>
+	location.href="<%=request.getContextPath()%>/index.jsp";
+</script>
 </body>
 </html>

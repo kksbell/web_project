@@ -7,6 +7,11 @@
 <title>Insert title here</title>
 </head>
 <body>
+<form name="form" action="join.do" method="post">
+아이디 <input name="id"/><br/>
+비번 <input name="pwd" type="password"/><br/>
+닉네임 <input name="nickname"/><br/>
+</form>
 
 </body>
 </html>

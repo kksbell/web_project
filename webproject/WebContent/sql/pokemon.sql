@@ -28,12 +28,18 @@ drop table mypokemon purge;
    regdate date -- 가입일시 (필요할지몰라서)
    );
    
+   insert into PMEMBER values ('hong', '1234', '길동쓰', sysdate);
+   
    create table jebo(
    id varchar2(20) references pmember (id), -- 아이디: member 테이블의 외래키
    pno number references pokemon (pno), -- 포켓몬 번호 : pokemon 테이블의 외래키
    location varchar2(500), -- 발견지역
    tip varchar2(500), -- 공략(?)ㅋㅋ
+<<<<<<< HEAD
    sshot varchar2(200), -- 스샷(주소, 파일업로드용)
+=======
+   sshot varchar2(200) default 'a.jpg', -- 스샷(주소, 파일업로드용)
+>>>>>>> branch 'master' of https://github.com/kksbell/web_project.git
    wdate date -- 제보일시
    );
    

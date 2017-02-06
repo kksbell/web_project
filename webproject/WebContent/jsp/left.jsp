@@ -1,5 +1,6 @@
 <%@ page language="java" contentType="text/html; charset=UTF-8"
     pageEncoding="UTF-8"%>
+
  <div id="left" > 
 	<div>
        <a href="./index.jsp" onfocus="this.blur()">
@@ -8,18 +9,29 @@
      </div>
      
      <br><br>
+     <% if(session.getAttribute("id")!=null){
+    	 %>
+    	 안녕하세요, <%=session.getAttribute("nickname") %> 님!
+    	 <br/>
+    	 마이페이지<br/>
+    	 <a href="logout.do">로그아웃</a>
+    	 <%
+     }else{%>
+     <form name="login" id="frm" method="post" action="login.do">
      <div id="login" align="center">
-     	<b>아이디: <input type="text" size="24"><br>
-     	비밀번호 :<input type="password" size="23"></b><br><br>
+     	<b>아이디: <input name="id" type="text" size="24"><br>
+     	비밀번호 :<input name="pwd" type="password" size="23"></b><br><br>
 
      	<div>
-         	<img src="./images/login.PNG" width="70" height="30" border="0" />
+         	<img src="./images/login.PNG" width="70" height="30" border="0" 
+         	onclick="document.getElementById('frm').submit()"/>
          	<img src="./images/pwd.PNG" width="70" height="30" border="0" />
          	<img src="./images/sign.PNG" width="70" height="30" border="0" />
      	</div>     	
      </div>
      <br><br>
-     
+     </form>
+     <%} %>
      <div id="name">
      <b>포켓몬 이름</b><br>
           <div >
