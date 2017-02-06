@@ -75,6 +75,53 @@ public class MemberDAO {
 		}
 		return dto;
 	}
+<<<<<<< HEAD
 	
 	// 회원가입
+=======
+<<<<<<< HEAD
+	
+	// 회원 가입
+	public void joinMember(MemberDTO dto){
+		try{
+			sql = "insert into pmember values (?,?,?,sysdate)";
+			pstmt = con.prepareStatement(sql);
+			pstmt.setString(1, dto.getId());
+			pstmt.setString(2, dto.getPwd());
+			pstmt.setString(3, dto.getNickname());
+			pstmt.executeUpdate();
+		}catch(Exception e){
+			e.printStackTrace();
+		}
+	}
+	
+	
+	//비밀번호 찾기
+	public MemberDTO findpwd(String id, String name){
+		MemberDTO member=null;
+		try{
+			sql="select *from pokemon where id=? and name=?";
+			pstmt=con.prepareStatement(sql);
+			pstmt.setString(1, id);
+			pstmt.setString(2, name);
+			rs=pstmt.executeQuery();
+			if(rs.next()){
+				member=new MemberDTO(); //빈 객체
+				member.setPwd
+				   (rs.getString("setPwd"));				
+			}
+			rs.close(); pstmt.close(); con.close();
+			}catch(Exception e){
+				e.printStackTrace();
+			}
+			return member;
+		}
+	
+
+	
+	
+
+=======
+>>>>>>> branch 'master' of https://github.com/kksbell/web_project.git
+>>>>>>> branch 'master' of https://github.com/kksbell/web_project.git
 }
