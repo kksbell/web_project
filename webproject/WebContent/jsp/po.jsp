@@ -31,7 +31,7 @@
   	    </ul>
   	    <ul>
   	      <li> 타입 </li>
-  	      <li> <%=pokemon.getPTYPE() %> </li>
+  	      <li> <%=pokemon.getPTYPE() %></li>
   	      <li> <%=pokemon.getPTYPE2() %> </li>
   	    </ul>
   	    <ul>

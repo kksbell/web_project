@@ -4,6 +4,8 @@ import java.sql.Connection;
 import java.sql.PreparedStatement;
 import java.sql.ResultSet;
 
+import org.apache.catalina.connector.Request;
+
 //import com.pokemon.model.PokemonBean;
 import db.DBConnection;
 
@@ -28,10 +30,12 @@ public class PokemonDAO {
 	/* 게시물 내용보기 */
 	public PokemonBean getCont(int PNO) {
 		PokemonBean bean = new PokemonBean(); // DTO객체
+		
 		try{
-			sql="select * from board where PNO=?";
+			sql="select * from board where PNO=? and PPICTURE=?";
 			pstmt= con.prepareStatement(sql);
 			pstmt.setInt(1, PNO);
+			//pstmt.setString(2, PPICTURE);
 			re = pstmt.executeQuery(); //select문 실행
 			if(re.next()){ // 레코드가 있으면
 				bean.setPNO(re.getInt("PNO"));

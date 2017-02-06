@@ -15,7 +15,7 @@ public class PokemonContAction implements Action {
 		// TODO Auto-generated method stub
 		// 1. 번호 받기
 		int PNO= 1;// Integer.parseInt(request.getParameter("1"));// "PNO"
-		
+		//String PPICTURE = (String) request.getParameter("PPICTURE");
 		// 2. 조회
 		PokemonDAO dao = new PokemonDAO();
 		//dao.boardHit(PNO); // 조회수 증가
