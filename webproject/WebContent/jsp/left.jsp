@@ -35,7 +35,8 @@
      <div id="name">
      <b>포켓몬 이름</b><br>
           <div >
-         	<img src="http://pokedex.pokemonkorea.co.kr/templates/default/images/btn_name_01.png" />
+         	<a href="/name.do"><img src="http://pokedex.pokemonkorea.co.kr/templates/default/images/btn_name_01.png" /></a>
+         	
          	<img src="http://pokedex.pokemonkorea.co.kr/templates/default/images/btn_name_02.png" />
          	<img src="http://pokedex.pokemonkorea.co.kr/templates/default/images/btn_name_03.png" />
          	<img src="http://pokedex.pokemonkorea.co.kr/templates/default/images/btn_name_04.png" />

@@ -1,21 +1,13 @@
 @CHARSET "UTF-8";
 
-#all{
-
-	
-}
-
 #left{
 	width:250px; /*폭 지정*/
 	height:1000px; /*높이 */
 	font-family : 나눔바른펜;
 	font-size : 20px;
 	margin:20px 0 0 160px;
-	float: left;
-
-	
+	float: left;	
 }
-
 #right{
 	width:1000px; /*폭 지정*/
 	height:1000px; /*높이 */
@@ -24,10 +16,7 @@
 	font-size: 15px;
 	
 }
-
-
-
 #name{
-	
+	font-family : 나눔바른펜;
 }
 
