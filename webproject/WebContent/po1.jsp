@@ -18,10 +18,10 @@
 
     <table>
     	<tr>
-         	<td><img src="http://pokedex.pokemonkorea.co.kr/templates/default/images/MonImages/middle/001_001.png" width="150" height="150" /></td>
-           	<td><img src="http://pokedex.pokemonkorea.co.kr/templates/default/images/MonImages/middle/002_002.png" width="150" height="150" /></td>
-            <td><img src="http://pokedex.pokemonkorea.co.kr/templates/default/images/MonImages/middle/003_003.png" width="150" height="150" /></td>
-           	<td><img src="http://pokedex.pokemonkorea.co.kr/templates/default/images/MonImages/middle/004_003.png" width="150" height="150" /></td>
+         	<td><img src="http://pokedex.pokemonkorea.co.kr/templates/default/images/MonImages/middle/001_001.png" width="150" height="150" onclick="window.open('pokemon_cont.do')" /></td>
+           	<td><img src="http://pokedex.pokemonkorea.co.kr/templates/default/images/MonImages/middle/002_002.png" width="150" height="150" onclick="window.open('pokemon_cont.do')" /></td>
+            <td><img src="http://pokedex.pokemonkorea.co.kr/templates/default/images/MonImages/middle/003_003.png" width="150" height="150" onclick="window.open('pokemon_cont.do')" /></td>
+           	<td><img src="http://pokedex.pokemonkorea.co.kr/templates/default/images/MonImages/middle/004_003.png" width="150" height="150" onclick="window.open('pokemon_cont.do')" /></td>
      	
        
         </tr>
