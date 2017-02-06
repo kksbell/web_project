@@ -3,8 +3,8 @@
 
  <div id="left" > 
 	<div>
-       <a href="./index.jsp" onfocus="this.blur()">
-         <img src="./images/logo.PNG" width="250" border="0" />
+       <a href="<%=request.getContextPath() %>/index.jsp" onfocus="this.blur()">
+         <img src="<%=request.getContextPath() %>/images/logo.PNG" width="250" border="0" />
      	</a>
      </div>
      
@@ -23,12 +23,12 @@
      	비밀번호 :<input name="pwd" type="password" size="23"></b><br><br>
 
      	<div>
-         	<img src="./images/login.PNG" width="70" height="30" border="0" 
+         	<img src="<%=request.getContextPath() %>/images/login.PNG" width="70" height="30" border="0" 
          	onclick="document.getElementById('frm').submit()"/>
-         	<img src="./images/pwd.PNG" width="70" height="30" border="0" 
+         	<img src="<%=request.getContextPath() %>/images/pwd.PNG" width="70" height="30" border="0" 
          	/>
-         	<img src="./images/sign.PNG" width="70" height="30" border="0" 
-         	onclick="window.open('jsp/join.jsp', '얍', 'width=200, height=200')"/>
+         	<img src="<%=request.getContextPath() %>/images/sign.PNG" width="70" height="30" border="0" 
+         	onclick="window.open('joingo.do', '얍', 'width=200, height=200')"/>
      	</div>     	
      </div>
      <br><br>

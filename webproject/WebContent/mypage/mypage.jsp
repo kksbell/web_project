@@ -5,9 +5,10 @@
 <head>
 <meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
 <title>마이 페이지</title>
+<link rel="../css/my.css">
 </head>
 <body>
-<%@ include file="./left.jsp" %>
+<%@ include file="../jsp/left.jsp" %>
 <% String nickname = (String)session.getAttribute("nickname");%>
 <hr>
 <h3>내 포켓몬</h3>

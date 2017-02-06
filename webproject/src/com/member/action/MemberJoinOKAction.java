@@ -33,7 +33,7 @@ public class MemberJoinOKAction implements Action {
 		// viewpage 포워딩
 		PrintWriter out = response.getWriter();
 		out.println("<script>");
-		out.println("opener.document.location.href='/main.do'");
+		out.println("opener.document.location.href='./main.do'");
 		out.println("self.close()");
 		out.println("</script>");
 		return null;
