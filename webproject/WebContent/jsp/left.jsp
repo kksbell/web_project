@@ -25,8 +25,10 @@
      	<div>
          	<img src="./images/login.PNG" width="70" height="30" border="0" 
          	onclick="document.getElementById('frm').submit()"/>
-         	<img src="./images/pwd.PNG" width="70" height="30" border="0" />
-         	<img src="./images/sign.PNG" width="70" height="30" border="0" />
+         	<img src="./images/pwd.PNG" width="70" height="30" border="0" 
+         	/>
+         	<img src="./images/sign.PNG" width="70" height="30" border="0" 
+         	onclick="window.open('jsp/join.jsp', '얍', 'width=200, height=200')"/>
      	</div>     	
      </div>
      <br><br>

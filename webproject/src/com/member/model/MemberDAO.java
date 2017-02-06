@@ -75,4 +75,22 @@ public class MemberDAO {
 		}
 		return dto;
 	}
+	
+	// 회원 가입
+	public void joinMember(MemberDTO dto){
+		try{
+			sql = "insert into pmember values (?,?,?,sysdate)";
+			pstmt = con.prepareStatement(sql);
+			pstmt.setString(1, dto.getId());
+			pstmt.setString(2, dto.getPwd());
+			pstmt.setString(3, dto.getNickname());
+			pstmt.executeUpdate();
+		}catch(Exception e){
+			e.printStackTrace();
+		}
+	}
+	
+	
+	
+	// 
 }
