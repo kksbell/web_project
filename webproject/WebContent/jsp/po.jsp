@@ -27,7 +27,7 @@
   	    
   	    <ul>
   	      <li> 키 </li>
-  	      <li> <%=pokemon.getPHEIGHT() %> </li>
+  	      <li> <%=pokemon.getPHEIGHT()%> </li>
   	    </ul>
   	    <ul>
   	      <li> 타입 </li>
