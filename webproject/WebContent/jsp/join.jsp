@@ -4,13 +4,14 @@
 <html>
 <head>
 <meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
-<title>Insert title here</title>
+<title>회원 가입</title>
 </head>
 <body>
-<form name="form" action="join.do" method="post">
+<form name="form" action="<%=request.getContextPath() %>/join.do" method="post">
 아이디 <input name="id"/><br/>
 비번 <input name="pwd" type="password"/><br/>
-닉네임 <input name="nickname"/><br/>
+닉네임 <input name="nickname"/><br/><br/>
+<input type="submit" value="가입"/>
 </form>
 
 </body>

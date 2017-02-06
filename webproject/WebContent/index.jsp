@@ -26,18 +26,20 @@ List<IndexDTO> list=(List<IndexDTO>)request.getAttribute("LIST");
     <table>
     <%
     for(int i=0; i<list.size(); i++){
-    	for( ;i<list.size();i++){
-		IndexDTO dto = list.get(i);
+    	IndexDTO dto = list.get(i);
+    	%><tr>
+    	<%
+    	for(int j=0;j<5;j++){
+		
 		// 컬렉션 요소값을 BoardBean 타입으로 가져온다.
     %>
-    	<tr>
-    		<td><img src="http://pokedex.pokemonkorea.co.kr/templates/default/images/MonImages/middle/<%=dto.getPPICTURE() %>" width="150" height="150" /></td>
-        </tr>
-        <tr align="center"> 	
-         	<td><b><%=dto.getPNAME()%></b></td>  	
-        </tr> 
+
+    		<td><img src="http://pokedex.pokemonkorea.co.kr/templates/default/images/MonImages/middle/<%=dto.getPPICTURE() %>" width="150" height="150" /><br>
+    		<b id="name"><%=dto.getPNAME()%></b></td>
+      
         <%
         	} // for end
+    	 %></tr> <br><%
     }
           }else{
           %>
