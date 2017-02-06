@@ -1,64 +1,64 @@
-<%@ page language="java" contentType="text/html; charset=UTF-8"
-    pageEncoding="UTF-8"%>
-<!DOCTYPE html PUBLIC "-//W3C//DTD HTML 4.01 Transitional//EN" "http://www.w3.org/TR/html4/loose.dtd">
-<html>
+<%@ page contentType="text/html; charset=UTF-8"%>
+<%@ page import="com.pokemon.model.*" %>
+<%@ page import="java.util.*" %>
+<!-- 외부 패키지 임포트 -->
+<% %>
 <head>
-<meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
-<title>Insert title here</title>
+<link href="../css/po.css" rel="stylesheet" type="text/css"/>
 </head>
 <body>
-<div class="po_wrap">
-  <div class="po_title">
-  	<p> <h2> No1. 이상이상 </h2>
+
+<%
+  PokemonBean pokemon = (PokemonBean)request.getAttribute("bean");
+%> 
+<div id="po_wrap">
+  <form action="<%=request.getContextPath()%>/pokemon_cont.do" method="post">
+  <div id="po_title">
+  	<p> <h2 id="po_title1">  이상이상 </h2>
+  
   </div>
   
-  <div class="po_content">
-  	<div class="po_content_left" width="400" height="400" float="left">
-  		<img src="images/001_001b.png">
+  <div id="po_content">
+  	<div id="po_content_left">
+  		<img src="../images/001_001b.png">
   	</div>
-  	<div class="po_content_right">
-  	  <div class="po_content_right_01">
-  	    <ul>
-  	      <li> 분류 </li>
-  	      <li> 씨앗포켓몬 </li>
-  	    </ul>
+  	<div id="po_content_right">
+  	  <div id="po_content_right_01">
+  	    
   	    <ul>
   	      <li> 키 </li>
-  	      <li>0.7m</li>
+  	      <li> <%=pokemon.getPHEIGHT()%> </li>
   	    </ul>
   	    <ul>
   	      <li> 타입 </li>
-  	      <li> <img src="images/btn_list_type_grass_on.png">  </li>
-  	      <li> <img src="images/btn_list_type_poison_on.png"> </li>
+  	      <li> <%=pokemon.getPTYPE() %></li>
+  	      <li> <%=pokemon.getPTYPE2() %> </li>
   	    </ul>
   	    <ul>
   	      <li> 몸무게 </li>
-  	      <li>6.9kg</li>
+  	      <li> <%=pokemon.getPWEIGHT()%> </li>
   	    </ul>  
   	    <ul>
   	      <li> 특성 </li>
-  	      <li>심록</li>
-  	    </ul>
-  	    <ul>
-  	      <li>성별</li>
-  	      <li>남녀</li>
+  	      <li><%=pokemon.getPFEATURE() %></li>
+  	      <li><%=pokemon.getPFEATURE_H() %></li>
   	    </ul>
   	  </div>
-  	  <div class="po_content_right_02">
+  	  <div id="po_content_right_02">
   	  	<h6>진화</h6>
   	  	  <table>
   	  	    <tr> 
-  	  	   	  <td> <img src="images/001_001s.png"> </td>
-  	  	      <td> <img src="images/001_001s.png"> </td>
-  	  	      <td> <img src="images/001_001s.png"> </td>
+  	  	   	  <td> <img src="../images/001_001s.png"> </td>
+  	  	      <td> <img src="../images/001_001s.png"> </td>
+  	  	      <td> <img src="../images/001_001s.png"> </td>
   	  	  	</tr>
   	  	  </table>
   	  </div>
-  	  <div class="po_content_right_03">
-  	  	<table class="po_content_right_03_01">
+  	  <div id="po_content_right_03">
+  	  	<table id="po_content_right_03_01" width="70%" height="100%" >
   	  		<tr>
   	  		  <td>
-  	  		    <textarea rows="" cols=""></textarea>
+  	  		    <input type="text">
   	  		  </td>
   	  		</tr>
   	  	</table>
@@ -66,9 +66,6 @@
   	  
   	</div>  
   </div>
-
+  </form>
 </div>
-
-
 </body>
-</html>

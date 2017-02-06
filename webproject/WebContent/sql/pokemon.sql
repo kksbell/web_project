@@ -35,11 +35,7 @@ drop table mypokemon purge;
    pno number references pokemon (pno), -- 포켓몬 번호 : pokemon 테이블의 외래키
    location varchar2(500), -- 발견지역
    tip varchar2(500), -- 공략(?)ㅋㅋ
-<<<<<<< HEAD
-   sshot varchar2(200), -- 스샷(주소, 파일업로드용)
-=======
    sshot varchar2(200) default 'a.jpg', -- 스샷(주소, 파일업로드용)
->>>>>>> branch 'master' of https://github.com/kksbell/web_project.git
    wdate date -- 제보일시
    );
    
@@ -47,8 +43,7 @@ drop table mypokemon purge;
    id varchar2(20) references pmember (id), -- 아이디: member 테이블의 외래키
    pno number references pokemon (pno) -- 포켓몬 번호 : pokemon 테이블의 외래키
    );
-insert into pmember values('다슬','1234','다슬',sysdate);
-select * from jebo;
+   
 
 Insert into SCOTT.pokemon (PNO,PNAME,PINITIAL,PTYPE,PTYPE2,PFEATURE,PFEATURE_H,PPICTURE,PHEIGHT,PWEIGHT) values (1,'이상해씨','ㅇ','풀','독','심록','엽록소','001_001.png','0.7m','6.9kg');
 Insert into SCOTT.pokemon (PNO,PNAME,PINITIAL,PTYPE,PTYPE2,PFEATURE,PFEATURE_H,PPICTURE,PHEIGHT,PWEIGHT) values (2,'이상해풀','ㅇ','풀','독','심록','엽록소','002_002.png','1.0m','13.0kg');

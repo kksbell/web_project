@@ -25,10 +25,8 @@
      	<div>
          	<img src="./images/login.PNG" width="70" height="30" border="0" 
          	onclick="document.getElementById('frm').submit()"/>
-         	<img src="./images/pwd.PNG" width="70" height="30" border="0" 
-         	/>
-         	<img src="./images/sign.PNG" width="70" height="30" border="0" 
-         	onclick="window.open('jsp/join.jsp', '얍', 'width=200, height=200')"/>
+         	<img src="./images/pwd.PNG" width="70" height="30" border="0" />
+         	<img src="./images/sign.PNG" width="70" height="30" border="0" />
      	</div>     	
      </div>
      <br><br>
@@ -37,8 +35,7 @@
      <div id="name">
      <b>포켓몬 이름</b><br>
           <div >
-         	<a href="/name.do"><img src="http://pokedex.pokemonkorea.co.kr/templates/default/images/btn_name_01.png" /></a>
-         	
+         	<img src="http://pokedex.pokemonkorea.co.kr/templates/default/images/btn_name_01.png" />
          	<img src="http://pokedex.pokemonkorea.co.kr/templates/default/images/btn_name_02.png" />
          	<img src="http://pokedex.pokemonkorea.co.kr/templates/default/images/btn_name_03.png" />
          	<img src="http://pokedex.pokemonkorea.co.kr/templates/default/images/btn_name_04.png" />

@@ -75,6 +75,7 @@ public class MemberDAO {
 		}
 		return dto;
 	}
+<<<<<<< HEAD
 	
 	// 회원 가입
 	public void joinMember(MemberDTO dto){
@@ -116,4 +117,6 @@ public class MemberDAO {
 	
 	
 
+=======
+>>>>>>> branch 'master' of https://github.com/kksbell/web_project.git
 }

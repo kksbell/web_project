@@ -42,7 +42,7 @@ public class MemberLoginOKAction implements Action{
 			// viewpage 포워딩
 			ActionForward forward = new ActionForward();
 			forward.setRedirect(true);
-			forward.setPath("./main.do");
+			forward.setPath("./index.do");
 			return forward;
 		}else if(re==0){ // 비번 틀림
 			out.println("<script>");
