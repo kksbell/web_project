@@ -25,15 +25,10 @@
      	<div>
          	<img src="<%=request.getContextPath() %>/images/login.PNG" width="70" height="30" border="0" 
          	onclick="document.getElementById('frm').submit()"/>
-<<<<<<< HEAD
          	<img src="<%=request.getContextPath() %>/images/pwd.PNG" width="70" height="30" border="0" 
          	/>
          	<img src="<%=request.getContextPath() %>/images/sign.PNG" width="70" height="30" border="0" 
          	onclick="window.open('joingo.do', '얍', 'width=200, height=200')"/>
-=======
-         	<img src="./images/pwd.PNG" width="70" height="30" border="0" />
-         	<img src="./images/sign.PNG" width="70" height="30" border="0" />
->>>>>>> branch 'master' of https://github.com/kksbell/web_project.git
      	</div>     	
      </div>
      <br><br>
