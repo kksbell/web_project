@@ -91,6 +91,29 @@ public class MemberDAO {
 	}
 	
 	
+	//비밀번호 찾기
+	public MemberDTO findpwd(String id, String name){
+		MemberDTO member=null;
+		try{
+			sql="select *from pokemon where id=? and name=?";
+			pstmt=con.prepareStatement(sql);
+			pstmt.setString(1, id);
+			pstmt.setString(2, name);
+			rs=pstmt.executeQuery();
+			if(rs.next()){
+				member=new MemberDTO(); //빈 객체
+				member.setPwd
+				   (rs.getString("setPwd"));				
+			}
+			rs.close(); pstmt.close(); con.close();
+			}catch(Exception e){
+				e.printStackTrace();
+			}
+			return member;
+		}
 	
-	// 
+
+	
+	
+
 }
